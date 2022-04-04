@@ -95,5 +95,7 @@ font-family: sans-serif;
       border: none;
       cursor: pointer;
 }
-
+.meme--image{
+  width: 100%;
+}
 
