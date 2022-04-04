@@ -96,6 +96,26 @@ font-family: sans-serif;
       cursor: pointer;
 }
 .meme--image{
-  width: 100%;
+  max-width: 800px;
+  max-height: 800px;
+}
+.centered {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
+.bottom {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: xx-large;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
