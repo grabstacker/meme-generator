@@ -21,16 +21,11 @@ export default function Meme() {
       url: memesArray[randomNumber].url,
     }));
   }
-  const handleTopChange = (e) => {
+  const handleChange = (e) => {
+    const { name, type, value } = e.target;
     setMemeState((prevState) => ({
       ...prevState,
-      topText: e.target.value,
-    }));
-  };
-  const handleBottomChange = (e) => {
-    setMemeState((prevState) => ({
-      ...prevState,
-      bottomText: e.target.value,
+      [name]: type === "text" && value,
     }));
   };
 
@@ -40,14 +35,18 @@ export default function Meme() {
         <input
           type="text"
           placeholder="Top text"
-          onChange={handleTopChange}
+          onChange={handleChange}
           className="form--input"
+          name="topText"
+          value={memeState.topText}
         />
         <input
           type="text"
           placeholder="Bottom text"
-          onChange={handleBottomChange}
+          onChange={handleChange}
           className="form--input"
+          name="bottomText"
+          value={memeState.bottomText}
         />
         <button className="form--button" onClick={getMemeImage}>
           Get a new meme image 🖼

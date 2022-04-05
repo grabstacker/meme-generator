@@ -100,22 +100,47 @@ font-family: sans-serif;
   max-height: 800px;
 }
 .centered {
+  color: white;
   position: absolute;
   top: 5%;
   left: 50%;
   transform: translate(-50%, -50%);
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000,
+  -2px -2px 0 #000,
+  2px -2px 0 #000,
+  -2px 2px 0 #000,
+  0 2px 0 #000,
+  2px 0 0 #000,
+  0 -2px 0 #000,
+  -2px 0 0 #000,
+  2px 2px 5px #000;
+
 }
 
 .bottom {
+    color: white;
   position: absolute;
   bottom: 5%;
   left: 50%;
   transform: translate(-50%, -50%);
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000,
+  -2px -2px 0 #000,
+  2px -2px 0 #000,
+  -2px 2px 0 #000,
+  0 2px 0 #000,
+  2px 0 0 #000,
+  0 -2px 0 #000,
+  -2px 0 0 #000,
+  2px 2px 5px #000;
+
 }
 .container {
   position: relative;
   text-align: center;
-  color: white;
+  color: black;
   font-size: xx-large;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ 
 }
