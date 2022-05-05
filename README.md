@@ -1,4 +1,5 @@
-# Getting Started with Create React App
+# React Meme Generator
+## Creates random api call and applies text to the image top and bottom location to create meme!
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
